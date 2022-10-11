@@ -1,0 +1,174 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * JustMagic implementation : © <Your name here> <Your email address here>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * justmagic.css
+ *
+ * JustMagic stylesheet
+ *
+ */
+
+/*
+    This is the CSS stylesheet of your game User Interface.
+    
+    Styles defined on this file will be applied to the HTML elements you define in your
+    HTML template (justmagic_justmagic.tpl), and to HTML elements you create dynamically
+    (in justmagic.js).
+    
+    Usually, you are using CSS to:
+    
+    1°) define the overall layout of your game
+        (ex: place the board on the top left, place player's hand beside, place the deck on the right, ...).
+
+    2°) create your CSS-sprites:
+        All images of your games should be gathered into a small number of image files. Then, using
+        background-image and background-position CSS properties, you create HTML blocks that can 
+        display these images correctly (see example below).
+    
+    3°) ... anything else:
+        It is really easy to add and remove CSS classes dynamically from your Javascript with
+        dojo.addClass and dojo.removeClass. It is also easy to check if an element has a class
+        (dojo.hasClass) or to get all elements with a specific class (dojo.query). This is why,
+        very often, using CSS classes for the logic of your user interface allow you to do complex
+        thing easily.
+        
+        
+     Note: on the production platform, this file will be compressed and comments will be removed.
+           Consequently, don't hesitate to put as many comments as necessary.
+*/
+
+
+/* Note: you must not use any @import directive */
+
+
+/********* You can start writing your CSS below this line: **********/
+
+
+/*
+    Example of CSS sprites (a black token and a white token, 20x20px each, embedded in the same "tokens.png" 40x20px image):
+
+    .white_token {
+        background-image: url('img/tokens.png');
+        background-position: 0px 0px;
+    }
+    .black_token {
+        background-image: url('img/tokens.png');
+        background-position: -20px 0px;
+    }
+    .token {
+        width: 20px;
+        height: 20px;
+        background-repeat: none;
+    }
+*/
+
+.card{
+    width: 60px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px black solid;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
+}
+
+.backprince{
+    background-color: #00ff00;
+}
+
+.backdeck{
+    background-color: #00ffff;
+}
+
+.necklace{
+    background-image: url('img/necklace.jpg');
+    background-position: 0px 0px;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    border: 1px black solid;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
+}
+
+.value1 .colorbar{
+    background-image: linear-gradient(to right, yellow , orange);
+}
+.value2 .colorbar{
+    background-image: linear-gradient(to right, orange , red);
+}
+.value3 .colorbar{
+    background-image: linear-gradient(to right, red , pink);
+}
+.value4 .colorbar{
+    background-image: linear-gradient(to right, pink , blue);
+}
+.value5 .colorbar{
+    background-image: linear-gradient(to right, blue , purple);
+}
+.value6 .colorbar{
+    background-image: linear-gradient(to right, purple , yellow);
+}
+
+.value1 .number, .value6 .number:nth-child(3){
+    color: yellow;
+}
+
+.value2 .number, .value1 .number:nth-child(3){
+    color: orange;
+}
+
+.value3 .number, .value2 .number:nth-child(3){
+    color: red;
+}
+
+.value4 .number, .value3 .number:nth-child(3){
+    color: pink;
+}
+
+.value5 .number, .value4 .number:nth-child(3){
+    color: blue;
+}
+
+.value6 .number, .value5 .number:nth-child(3){
+    color: purple;
+}
+
+.number {
+    display: inline;
+    font-size: 20px;
+    margin: 2px;
+}
+.gem {
+    display: inline-block;
+    background-position: -20px -32px;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.hasgem {
+    background-image: url('img/necklace.jpg');
+}
+
+.colorbar{
+    width: 60px;
+    height: 5px;
+    margin-top: 3px;
+}
+
+#hand{
+    padding: 40px;
+    border: 1px solid black;
+    background-color: #ffffff;
+}
+.card{
+    display: inline-block;
+}
+
+
+
+
