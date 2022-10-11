@@ -84,6 +84,33 @@ DRAW
         <div class="colorbar"></div>
     </div>
 </div>
+<div id="princes">
+    PRINCES
+    <div class="card head score1">
+        <div class="coin"></div>
+    </div>
+    <div class="card head score2">
+    <div class="coin"></div>
+    <div class="coin"></div>
+    </div>
+    <div class="card head score3">
+    <div class="coin"></div>
+    <div class="coin"></div>
+    <div class="coin"></div>
+    </div>
+    <div class="card feet score1">
+    <div class="coin"></div>
+    </div>
+    <div class="card feet score2">
+    <div class="coin"></div>
+    <div class="coin"></div>
+    </div>
+    <div class="card feet score3">
+    <div class="coin"></div>
+    <div class="coin"></div>
+    <div class="coin"></div>
+    </div>
+</div>
 
 <script type="text/javascript">
 
